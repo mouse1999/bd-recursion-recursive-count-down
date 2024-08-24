@@ -7,7 +7,7 @@ public class RecursionPractice {
      * @param args not used
      */
     public static void main(String[] args) {
-        int target = 3;
+        int target = 9;
         RecursiveCountDown recursiveCountDown = new RecursiveCountDown();
         System.out.println(recursiveCountDown.countDown(target));
         //Example: The output for a target of 3 should be "3210"

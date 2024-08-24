@@ -1,5 +1,8 @@
 package com.amazon.ata.recursion.prework;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class RecursiveCountDown {
 
     /**
@@ -9,7 +12,11 @@ public class RecursiveCountDown {
      * @return - this is a String that has combined all the numbers from target down to 0.
      */
     public String countDown(int target) {
-        //PARTICIPANTS: replace this placeholder line with your implementation
-        return Integer.toString(-1);
+        if (target == 0) {
+            return "0";
+        }
+
+        // Recursive case: concatenate target with the result of countDown(target - 1)
+        return  target + countDown(target - 1);
     }
 }
